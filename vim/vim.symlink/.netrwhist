@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/albert.viscasillas/devel/dba/tools/rakuten_integration'
+let g:netrw_dirhist_2='/Users/albert.viscasillas/devel/dba'
+let g:netrw_dirhist_3='/Users/albertviscasillascampanya/devel/cerberus'
+let g:netrw_dirhist_4='/Users/albertviscasillascampanya/devel/cerberus/spec'
+let g:netrw_dirhist_5='/Users/albertviscasillascampanya/devel/cerberus'
+let g:netrw_dirhist_6='/Users/albertviscasillascampanya/.dotfiles'
+let g:netrw_dirhist_7='/Users/albertviscasillascampanya'
