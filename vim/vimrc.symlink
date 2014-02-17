@@ -1,11 +1,15 @@
-set nocompatible
+syntax on
+colorscheme railscasts 
+
 filetype plugin indent on
+
+let mapleader=","
+
+set nocompatible
 set incsearch
 set title
-let mapleader=","
 set background=dark
 set dir=~/.tmp
-syntax on
 set expandtab
 set tabstop=2
 set shiftwidth=2
@@ -32,7 +36,7 @@ augroup filetypedetect
 augroup END
 
 " == Plugins ==================================================================
-" All plugins go into ~/.vim/bundles/<plugin_name>
+" All plugins go into ~/.vim/bundle/<plugin_name>
 call pathogen#infect()
 
 " == Functions ================================================================
@@ -46,11 +50,11 @@ function! HighlightWordUnderCursor()
         return
     endtry
 endfunction
-" DISABLED set updatetime=2000 " CursorHold timeout is 2s
 nmap <C-h> :call HighlightWordUnderCursor()<CR>
 
 " Search and replace words under cursor with "\s"
 nnoremap <Leader>fr :%s/\<<C-r><C-w>\>/
+
 " Find in files the word under cursor
 nnoremap <Leader>ff :Ack <C-r><C-w>
 
@@ -61,21 +65,6 @@ function! OpenTagInNewTab()
     execute "tabnew<CR>"
     execute ("tag " . a:word)<CR>
 endfunction
-
-" 256 colors only if you can handle it
-if $TERM =~ "-256color"
-  set t_Co=256
-  colorscheme railscasts 
-endif
-" colorscheme Tomorrow-Night
-
-if has('gui_running')
-  colorscheme railscasts
-	set guifont=Inconsolata\ 10
-
-	set lines=45
-	set columns=100
-endif
 
 " Map F4 to rebuild tags file
 nmap <silent> <Leader>rf
@@ -91,19 +80,8 @@ let g:fuzzy_ceiling=20000
 " Otl config
 let g:otl_bold_headers = 0
 
-" VSTreeExplorer, vertical layout
-let g:treeExplVertical = 1
-let g:treeExplWinSize = 40
-
 " Viki config
 let g:vikiFancyHeadings = 1
-
-" Wiki config
-" let g:vimwiki_list = [{'path': '~/Dropbox/Notes/', 'index': 'index'}]
-" let g:vimwiki_browsers = ['/usr/bin/chromium-browser']
-
-" Paste toggle
-set pastetoggle=<F12>
 
 " Tab navigation
 map <C-t> :tabnew<CR>
@@ -120,9 +98,6 @@ map <C-x><C-x> :!%<CR>
 " Use tab to jump between parens (% is painful)
 nnoremap <TAB> %
 
-" Fugitive mappings
-" nmap <leader>gs :Gstatus<CR>
-" nmap <leader>gc :Gcommit<CR>
 " Go mappings
 nmap <F5> :make<CR>
 
