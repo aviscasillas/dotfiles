@@ -27,6 +27,13 @@ set backspace=indent,eol,start
 set cursorline
 set colorcolumn=80
 
+" Resize windows quickly
+" reset with <c-w>=
+nmap <c-w>l :vertical res +20<cr>
+nmap <c-w>h :vertical res -20<cr>
+nmap <c-w>j :res +20<cr>
+nmap <c-w>k :res -20<cr>
+
 " File type detection
 augroup filetypedetect
     au BufNewFile,BufRead *.xt  set filetype=xt
