@@ -143,9 +143,6 @@ nmap <leader><leader>fu :Ack -w <cword><CR>
 " alias [Shift-.] to [-] for fast command mode
 nmap - :
 
-" autotag
-source ~/.vim/bundle/autotag/plugin/autotag.vim
-
 " Tag navigation
 nmap <C-c> :tag expand("<cword>")<CR>
 " nmap <leader>s :Rgrep expand("<cword>")
