@@ -32,3 +32,9 @@ do
 done
 
 unset config_files
+
+# set vi mode for command line
+set -o vi
+
+# set available the history-incremental-search-backward on vi mode
+bindkey "^R" history-incremental-search-backward
