@@ -35,3 +35,6 @@ unset config_files
 
 # set available the history-incremental-search-backward on vi mode
 bindkey "^R" history-incremental-search-backward
+
+# set xterm-256color for the terminal
+export TERM=xterm-256color
