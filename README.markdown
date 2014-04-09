@@ -4,10 +4,14 @@ to use oh-my-zsh as the main zsh configuration.
 
 ## install
 
-It has [oh-my-zsh] (https://github.com/robbyrussell/oh-my-zsh) dependency, so
-you must clone it into your home directory:
+It has [oh-my-zsh] (https://github.com/robbyrussell/oh-my-zsh) dependency: 
 ```sh
-$ git clone https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+$ curl -L http://install.ohmyz.sh | sh
+```
+
+It has [prelude] (https://github.com/bbatsov/prelude) dependency:
+```sh
+$ curl -L https://github.com/bbatsov/prelude/raw/master/utils/installer.sh | sh
 ```
 
 Clone this dotfiles repo,  and copy the zshr.template inside:
