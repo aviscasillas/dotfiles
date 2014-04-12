@@ -1,5 +1,5 @@
 (deftheme visk "Railscasts based theme")
- 
+
 (custom-theme-set-faces
  'visk
  '(default ((t (:background "#000000"))))
@@ -22,5 +22,5 @@
  '(font-lock-warning-face ((t (:foreground "red" :bold t))))
  '(font-lock-comment-face ((t (:foreground "#888888"))))
  '(font-lock-comment-delimiter-face ((t (:foreground "#888888")))))
- 
+
 (provide-theme 'visk)
