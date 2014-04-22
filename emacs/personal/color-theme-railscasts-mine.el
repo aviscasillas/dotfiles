@@ -49,6 +49,15 @@
 
 ;;; Code:
 
+;;; Custom code adeded by aviscasillas:
+;; Require color-theme package if it's not installed
+(if (package-installed-p 'color-theme)
+    nil
+  (progn
+    (package-install 'color-theme)
+    (package-refresh-contents)))
+;;; END custom code
+
 (eval-when-compile
   (require 'color-theme))
 
