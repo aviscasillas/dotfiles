@@ -19,9 +19,6 @@
 (setq rspec-use-rake-when-possible nil)
 
 (key-chord-define-global "dd" 'make-directory)
-(key-chord-define-global "gg" 'goto-line)
-(key-chord-define-global "uu" 'undo)
-(key-chord-define-global "UU" 'redo)
 (key-chord-define-global "kk" 'next-multiframe-window)
 (key-chord-define-global "jj" 'previous-multiframe-window)
 (key-chord-define-global "xx" 'smex)
