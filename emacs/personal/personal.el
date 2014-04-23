@@ -39,6 +39,7 @@
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 (global-set-key (kbd "C-c C-c") 'comment-or-uncomment-region)
+(global-set-key (kbd "C-c C-f") 'toggle-fullscreen)
 
 ;; display line numbers
 (global-linum-mode t)
