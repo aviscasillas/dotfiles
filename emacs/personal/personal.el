@@ -18,7 +18,6 @@
 (prelude-require-package 'rspec-mode)
 (setq rspec-use-rake-when-possible nil)
 
-(key-chord-define-global "dd" 'make-directory)
 (key-chord-define-global "kk" 'next-multiframe-window)
 (key-chord-define-global "jj" 'previous-multiframe-window)
 (key-chord-define-global "xx" 'smex)
@@ -43,3 +42,6 @@
 
 ;; insert a debugger statement on cursor (visk-helpers.el)
 (global-set-key (kbd "C-c C-d") 'insert-debugger)
+
+;; disable whitespace mode
+(setq prelude-whitespace nil)
