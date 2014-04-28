@@ -49,6 +49,15 @@
 
 ;;; Code:
 
+;;; Custom code adeded by aviscasillas:
+;; Require color-theme package if it's not installed
+(if (package-installed-p 'color-theme)
+    nil
+  (progn
+    (package-install 'color-theme)
+    (package-refresh-contents)))
+;;; END custom code
+(global-hl-line-mode 1)
 (eval-when-compile
   (require 'color-theme))
 
@@ -56,17 +65,19 @@
   (interactive)
   (color-theme-install
    '(color-theme-railscasts
-     ((background-color . "#232323")
+     ((background-color . "black")
       (border-color . "#232323")
       (background-mode . dark)
       (mouse-color . "sienna1") ; avallark
       (cursor-color . "#5A647E") ;avallark
       (foreground-color . "#E6E1DC"))
-     (default ((t (:background "#232323" :foreground "#F8F8F8")))) ;avallark
+     (default ((t (:background "black" :foreground "#F8F8F8")))) ;avallark
      (blue ((t (:foreground "blue")))) ; avallark
      (bold ((t (:bold t))))
      (bold-italic ((t (:italic t :bold t))))
      (fringe ((t (:background "#232323"))))
+     (linum ((t (:background "black"))))
+     (hl-line ((t (:background "#111111"))))
      (font-lock-builtin-face ((t (:foreground "#D0D0FF"))))
      (font-lock-comment-face ((t (:foreground "#BC9458" :italic t))))
      (font-lock-constant-face ((t (:foreground "#6D9CBE"))))
@@ -89,9 +100,9 @@
                                          "black"))))
      (modeline-mousable-minor-mode ((t (:background
                                         "#A5BAF1" :foreground "black"))))
-     (region ((t (:background "#555577"))))
+     (region ((t (:background "#025800"))))
      (primary-selection ((t (:background "#555577"))))
-     (isearch ((t (:background "#555555"))))
+     (isearch ((t (:background "#990000"))))
      (zmacs-region ((t (:background "#555577"))))
      (secondary-selection ((t (:background "darkslateblue"))))
      (flymake-errline ((t (:background "LightSalmon" :foreground

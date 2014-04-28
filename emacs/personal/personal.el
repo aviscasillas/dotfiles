@@ -2,7 +2,6 @@
 (prelude-require-package 'bundler)
 (prelude-require-package 'rubocop)
 (prelude-require-package 'ruby-tools)
-(prelude-require-package 'color-theme)
 
 (prelude-require-package 'markdown-mode)
 (autoload 'markdown-mode "markdown-mode"
@@ -19,10 +18,6 @@
 (prelude-require-package 'rspec-mode)
 (setq rspec-use-rake-when-possible nil)
 
-(key-chord-define-global "dd" 'make-directory)
-(key-chord-define-global "gg" 'goto-line)
-(key-chord-define-global "uu" 'undo)
-(key-chord-define-global "UU" 'redo)
 (key-chord-define-global "kk" 'next-multiframe-window)
 (key-chord-define-global "jj" 'previous-multiframe-window)
 (key-chord-define-global "xx" 'smex)
@@ -40,9 +35,13 @@
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 (global-set-key (kbd "C-c C-c") 'comment-or-uncomment-region)
+(global-set-key (kbd "C-c C-f") 'toggle-fullscreen)
 
 ;; display line numbers
 (global-linum-mode t)
 
 ;; insert a debugger statement on cursor (visk-helpers.el)
 (global-set-key (kbd "C-c C-d") 'insert-debugger)
+
+;; disable whitespace mode
+(setq prelude-whitespace nil)
