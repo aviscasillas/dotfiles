@@ -5,7 +5,7 @@ to use oh-my-zsh as the main zsh configuration.
 ## install
 
 Install ZSH, set it as default and relogin to OSX:
-```
+```sh
 $ brew install zsh
 $ chsh -s /usr/local/bin/zsh $USER
 $ sed "/usr/local/bin/zsh" /etc/shells
