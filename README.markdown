@@ -4,6 +4,14 @@ to use oh-my-zsh as the main zsh configuration.
 
 ## install
 
+Install ZSH, set it as default and relogin to OSX:
+```sh
+$ brew install zsh
+$ chsh -s /usr/local/bin/zsh $USER
+$ sed "/usr/local/bin/zsh" /etc/shells
+$ sudo mv /etc/{zshenv,zshrc}
+```
+
 It has [oh-my-zsh] (https://github.com/robbyrussell/oh-my-zsh) dependency: 
 ```sh
 $ curl -L http://install.ohmyz.sh | sh
