@@ -38,3 +38,6 @@ bindkey "^R" history-incremental-search-backward
 
 # set xterm-256color for the terminal
 export TERM=xterm-256color
+
+# load .nvm
+source ~/.nvm/nvm.sh
