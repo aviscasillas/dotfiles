@@ -45,3 +45,5 @@
 
 ;; disable whitespace mode
 (setq prelude-whitespace nil)
+
+(setq set-winner-mode)
