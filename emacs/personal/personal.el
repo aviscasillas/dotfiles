@@ -53,5 +53,6 @@
 (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
 
 ;; Enable auto-complete
+(add-to-list 'load-path "/Users/albert.viscasillas/.emacs.d")
 (require 'auto-complete-config)
 (ac-config-default)
