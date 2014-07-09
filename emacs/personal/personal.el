@@ -56,3 +56,9 @@
 (add-to-list 'load-path "/Users/albert.viscasillas/.emacs.d")
 (require 'auto-complete-config)
 (ac-config-default)
+
+;; Disable scrollbars
+(scroll-bar-mode -1)
+
+;; Set font size
+(set-face-attribute 'default nil :height 100)
