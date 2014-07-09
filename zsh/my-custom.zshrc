@@ -41,3 +41,8 @@ export TERM=xterm-256color
 
 # load .nvm
 source ~/.nvm/nvm.sh
+
+# workarround for lang encoding
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
