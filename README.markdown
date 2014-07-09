@@ -34,6 +34,10 @@ $ cd ~/.dotfiles
 $ script/bootstrap
 ```
 
+## other dependencies
+### emacs
+[Autocomplete] (http://cx4a.org/software/auto-complete/manual.html#Downloads)
+
 ## more info
 There are some changes between this and Holman's dotfile, so you can refer to  
 his [README] (https://github.com/holman/dotfiles) for more info.
