@@ -15,3 +15,7 @@
   (interactive)
   (when (fboundp 'winner-mode)
     (winner-mode 1)))
+
+(defun byebug ()
+  (interactive)
+  (insert "require 'byebug'; byebug; 2+2"))
