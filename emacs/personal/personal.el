@@ -3,6 +3,9 @@
 (prelude-require-package 'rubocop)
 (prelude-require-package 'ruby-tools)
 
+(prelude-require-package 'yasnippet)
+(yas-global-mode 1)
+
 (prelude-require-package 'markdown-mode)
 (autoload 'markdown-mode "markdown-mode"
   "Major mode for editing Markdown files" t)
