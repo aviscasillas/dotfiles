@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: byebug
+# key: bye
+# binding: direct-keybinding
+# --
+require 'byebug'; byebug; true
