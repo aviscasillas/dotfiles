@@ -75,8 +75,8 @@
      (blue ((t (:foreground "blue")))) ; avallark
      (bold ((t (:bold t))))
      (bold-italic ((t (:italic t :bold t))))
-     (fringe ((t (:background "#232323"))))
-     (linum ((t (:background "black"))))
+     (fringe ((t (:background "black"))))
+     (linum ((t (:background "#232323"))))
      (hl-line ((t (:background "#111111"))))
      (font-lock-builtin-face ((t (:foreground "#D0D0FF"))))
      (font-lock-comment-face ((t (:foreground "#BC9458" :italic t))))
