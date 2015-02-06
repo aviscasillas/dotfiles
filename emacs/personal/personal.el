@@ -3,21 +3,6 @@
 (prelude-require-package 'rubocop)
 (prelude-require-package 'ruby-tools)
 
-(prelude-require-package 'yasnippet)
-(yas-global-mode 1)
-
-;; Remove Yasnippet's default tab key binding
-(define-key yas-minor-mode-map (kbd "<tab>") nil)
-(define-key yas-minor-mode-map (kbd "TAB") nil)
-;; Set Yasnippet's key binding to shift+tab
-(define-key yas-minor-mode-map (kbd "<backtab>") 'yas-expand)
-
-(prelude-require-package 'markdown-mode)
-(autoload 'markdown-mode "markdown-mode"
-  "Major mode for editing Markdown files" t)
-(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
-(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
-
 (prelude-require-package 'rbenv)
 (global-rbenv-mode)
 
@@ -34,10 +19,6 @@
 (display-time-mode 1)
 (setq display-time-format "%R %d/%m/%Y")
 
-(prelude-require-package 'indent-guide)
-(require 'indent-guide)
-(indent-guide-global-mode)
-
 (prelude-require-package 'multiple-cursors)
 (global-set-key (kbd "C-S-c C-S-c") 'mc/edit-lines)
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
@@ -49,9 +30,6 @@
 ;; display line numbers
 (global-linum-mode t)
 
-;; insert a debugger statement on cursor (visk-helpers.el)
-(global-set-key (kbd "C-c C-d") 'insert-debugger)
-
 ;; disable whitespace mode
 (setq prelude-whitespace nil)
 
@@ -60,11 +38,6 @@
 ;; Short cut for ace-window
 (global-set-key (kbd "M-p") 'ace-window)
 (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
-
-;; Enable auto-complete
-(add-to-list 'load-path "/Users/albert.viscasillas/.emacs.d")
-(require 'auto-complete-config)
-(ac-config-default)
 
 ;; Disable scrollbars
 (scroll-bar-mode -1)
