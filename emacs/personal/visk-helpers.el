@@ -1,7 +1,3 @@
-(defun insert-debugger ()
-  (interactive)
-  (insert "require 'ruby-debug'; debugger; 2+2"))
-
 ;; Toggle fullscreen for OSX
 (defun toggle-fullscreen()
   "Toggle full screen"

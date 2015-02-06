@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: debugger
+# key: deb
+# binding: direct-keybinding
+# --
+require 'ruby-debug'; debugger; true
