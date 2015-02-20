@@ -40,7 +40,7 @@ bindkey "^R" history-incremental-search-backward
 export TERM=xterm-256color
 
 # load .nvm
-source ~/.nvm/nvm.sh
+# source ~/.nvm/nvm.sh
 
 # workarround for lang encoding
 export LANG=en_US.UTF-8

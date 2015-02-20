@@ -27,6 +27,9 @@
 (global-set-key (kbd "C-c C-c") 'comment-or-uncomment-region)
 (global-set-key (kbd "C-c C-f") 'toggle-fullscreen)
 
+;; set home as default directory
+(setq default-directory "~/" )
+
 ;; display line numbers
 (global-linum-mode t)
 
@@ -44,3 +47,8 @@
 
 ;; Set font size
 (set-face-attribute 'default nil :height 100)
+
+;; Multi-term config
+(setq multi-term-program "/bin/zsh")
+;; Use Emacs terminfo, not system terminfo
+(setq system-uses-terminfo nil)
