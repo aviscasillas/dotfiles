@@ -52,3 +52,5 @@
 (setq multi-term-program "/bin/zsh")
 ;; Use Emacs terminfo, not system terminfo
 (setq system-uses-terminfo nil)
+
+(setq ruby-insert-encoding-magic-comment nil)
