@@ -77,7 +77,7 @@
      (bold-italic ((t (:italic t :bold t))))
      (fringe ((t (:background "black"))))
      (linum ((t (:background "#232323"))))
-     (hl-line ((t (:background "#111111"))))
+     (hl-line ((t (:background "#2A0000"))))
      (font-lock-builtin-face ((t (:foreground "#D0D0FF"))))
      (font-lock-comment-face ((t (:foreground "#BC9458" :italic t))))
      (font-lock-constant-face ((t (:foreground "#6D9CBE"))))
@@ -100,7 +100,7 @@
                                          "black"))))
      (modeline-mousable-minor-mode ((t (:background
                                         "#A5BAF1" :foreground "black"))))
-     (region ((t (:background "#025800"))))
+     (region ((t (:background "#002A00"))))
      (primary-selection ((t (:background "#555577"))))
      (isearch ((t (:background "#990000"))))
      (zmacs-region ((t (:background "#555577"))))
