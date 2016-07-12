@@ -4,7 +4,7 @@
 [hub]
         protocol = https
 [user]
-	name = aviscasillas
+	name = Albert Viscasillas
 	email = aviscasillas@gmail.com
 [credential]
         helper = osxkeychain
