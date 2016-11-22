@@ -26,6 +26,12 @@
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 (global-set-key (kbd "C-c C-c") 'comment-or-uncomment-region)
 (global-set-key (kbd "C-c C-f") 'toggle-fullscreen)
+(global-set-key (kbd "C-c C-t") 'google-translate-smooth-translate)
+
+(global-set-key (kbd "C-c <left>") 'shrink-window-horizontally)
+(global-set-key (kbd "C-c <right>") 'enlarge-window-horizontally)
+(global-set-key (kbd "C-c <down>") 'shrink-window)
+(global-set-key (kbd "C-c <up>") 'enlarge-window)
 
 ;; set home as default directory
 (setq default-directory "~/" )
@@ -36,7 +42,7 @@
 ;; disable whitespace mode
 (setq prelude-whitespace nil)
 
-(setq set-winner-mode)
+(setq set-winner-mode 1)
 
 ;; Short cut for ace-window
 (global-set-key (kbd "M-p") 'ace-window)
