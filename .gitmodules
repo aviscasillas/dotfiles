@@ -1,0 +1,3 @@
+[submodule "emacs/personal/emacs-crystal-mode"]
+	path = emacs/personal/emacs-crystal-mode
+	url = https://github.com/jpellerin/emacs-crystal-mode.git
