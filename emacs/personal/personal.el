@@ -27,11 +27,15 @@
 (global-set-key (kbd "C-c C-c") 'comment-or-uncomment-region)
 (global-set-key (kbd "C-c C-f") 'toggle-fullscreen)
 (global-set-key (kbd "C-c C-t") 'google-translate-smooth-translate)
+(global-set-key (kbd "C-c C-b ") 'magit-blame)
 
 (global-set-key (kbd "C-c <left>") 'shrink-window-horizontally)
 (global-set-key (kbd "C-c <right>") 'enlarge-window-horizontally)
 (global-set-key (kbd "C-c <down>") 'shrink-window)
 (global-set-key (kbd "C-c <up>") 'enlarge-window)
+
+;; Fiplr (https://github.com/grizzl/fiplr)
+(global-set-key (kbd "C-x f") 'fiplr-find-file)
 
 ;; set home as default directory
 (setq default-directory "~/" )
