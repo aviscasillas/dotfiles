@@ -63,3 +63,5 @@
 (setq ruby-insert-encoding-magic-comment nil)
 
 (setq-default dotspacemacs-configuration-layers '(osx))
+
+(setq js-indent-level 2)
