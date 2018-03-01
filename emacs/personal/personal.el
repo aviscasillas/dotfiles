@@ -2,6 +2,7 @@
 (prelude-require-package 'bundler)
 (prelude-require-package 'rubocop)
 (prelude-require-package 'ruby-tools)
+(prelude-require-package 'solidity-mode)
 
 (prelude-require-package 'rbenv)
 (global-rbenv-mode)
@@ -29,10 +30,13 @@
 (global-set-key (kbd "C-c C-t") 'google-translate-smooth-translate)
 (global-set-key (kbd "C-c C-b ") 'magit-blame)
 
-(global-set-key (kbd "C-c <left>") 'shrink-window-horizontally)
-(global-set-key (kbd "C-c <right>") 'enlarge-window-horizontally)
-(global-set-key (kbd "C-c <down>") 'shrink-window)
-(global-set-key (kbd "C-c <up>") 'enlarge-window)
+(global-set-key (kbd "M-<left>") 'shrink-window-horizontally)
+(global-set-key (kbd "M-<right>") 'enlarge-window-horizontally)
+(global-set-key (kbd "M-<down>") 'shrink-window)
+(global-set-key (kbd "M-<up>") 'enlarge-window)
+
+(global-set-key [M-up] (lambda () (interactive) (scroll-up-line)))
+(global-set-key [M-down] (lambda () (interactive) (scroll-down-line)))
 
 ;; Fiplr (https://github.com/grizzl/fiplr)
 (global-set-key (kbd "C-x f") 'fiplr-find-file)
@@ -49,7 +53,7 @@
 (setq set-winner-mode 1)
 
 ;; Short cut for ace-window
-(global-set-key (kbd "M-p") 'ace-window)
+(global-set-key (kbd "M-SPC") 'ace-window)
 (setq aw-keys '(?a ?s ?d ?f ?g ?h ?j ?k ?l))
 
 ;; Disable scrollbars
