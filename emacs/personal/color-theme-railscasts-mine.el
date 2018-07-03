@@ -77,7 +77,7 @@
      (bold-italic ((t (:italic t :bold t))))
      (fringe ((t (:background "black"))))
      (linum ((t (:background "#232323"))))
-     (hl-line ((t (:background "#2A0000"))))
+     (hl-line ((t (:background "#3A0000"))))
      (font-lock-builtin-face ((t (:foreground "#D0D0FF"))))
      (font-lock-comment-face ((t (:foreground "#BC9458" :italic t))))
      (font-lock-constant-face ((t (:foreground "#6D9CBE"))))
