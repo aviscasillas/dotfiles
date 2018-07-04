@@ -4,7 +4,6 @@
 (prelude-require-package 'ruby-tools)
 (prelude-require-package 'solidity-mode)
 (prelude-require-package 'fiplr)
-(prelude-require-package 'auto-complete)
 
 (prelude-require-package 'rbenv)
 (global-rbenv-mode)
