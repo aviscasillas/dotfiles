@@ -6,7 +6,7 @@ cp ~/.dotfiles/emacs/personal/*.el ~/.emacs.d/personal/
 
 # Rewrite snippets
 rm -rf ~/.emacs.d/snippets
-cp -rf ~/.dotfiles/emacs/snippets ~/.emacs.d/snippets
+cp -rf ~/.dotfiles/emacs/personal/snippets ~/.emacs.d/personal/snippets
 
 
 # Install auto-complete plugin if doesn't exist
