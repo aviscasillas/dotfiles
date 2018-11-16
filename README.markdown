@@ -1,8 +1,8 @@
-# dotfiles
+# Dotfiles
 This is a fork from https://github.com/holman/dotfiles, but customized and changed
 to use oh-my-zsh as the main zsh configuration.
 
-## install
+## Install
 
 Install ZSH, set it as default and relogin to OSX:
 ```sh
@@ -34,10 +34,11 @@ $ cd ~/.dotfiles
 $ script/bootstrap
 ```
 
-## other dependencies
-### emacs
-[Autocomplete] (http://cx4a.org/software/auto-complete/manual.html#Downloads)
+## Other dependencies
+### Emacs
+- [Emacs Plus](https://github.com/d12frosted/homebrew-emacs-plus)
+- [Autocomplete](http://cx4a.org/software/auto-complete/manual.html#Downloads)
 
-## more info
+## More info
 There are some changes between this and Holman's dotfile, so you can refer to  
 his [README] (https://github.com/holman/dotfiles) for more info.
