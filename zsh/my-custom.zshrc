@@ -49,3 +49,8 @@ export LC_ALL=en_US.UTF-8
 
 # Xing olympus-tools
 export PATH="$PATH:$HOME/devel/olympus-tools/bin"
+
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_121`
+
+# asdf (https://asdf-vm.com/#/)
+. $(brew --prefix asdf)/asdf.sh
