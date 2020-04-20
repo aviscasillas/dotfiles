@@ -5,3 +5,7 @@
 *.rbc
 .bundle/
 vendor/bundle/
+.idea
+.elixir_ls
+.dockerignore
+Dockerfile-generated.*
