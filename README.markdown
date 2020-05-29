@@ -6,6 +6,7 @@ to use oh-my-zsh as the main zsh configuration.
 
 **Install dependencies:**
 
+- Java `brew cask install java`
 - [Homebrew](https://brew.sh/)
 - [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 - [Emacs Plus](https://github.com/d12frosted/homebrew-emacs-plus)

@@ -48,9 +48,13 @@ export LANGUAGE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 # Xing olympus-tools
-export PATH="$PATH:$HOME/devel/olympus-tools/bin"
+export PATH="$HOME/.oly/bin:$PATH"
 
-export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_121`
+# Java environment
+export JAVA_HOME=`/usr/libexec/java_home`
+
+# This is added to fix `gem install mysql2` (ld: library not found for -lssl)
+export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
 
 # asdf (https://asdf-vm.com/#/)
 . $(brew --prefix asdf)/asdf.sh
