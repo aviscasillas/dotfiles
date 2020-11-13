@@ -159,3 +159,7 @@ au BufRead,BufNewFile todo.txt set filetype=todotxt
 
 " Show hidden files in NERDTree
 let NERDTreeShowHidden=1
+
+" Fix incompatible library version: https://github.com/skwp/dotfiles/issues/802
+let $RUBYHOME=$HOME."/.rbenv/versions/2.7.1"
+set rubydll=$HOME/.rbenv/versions/2.7.1/lib/libruby.2.7.1.dylib
