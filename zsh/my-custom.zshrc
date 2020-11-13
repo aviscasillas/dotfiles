@@ -63,3 +63,6 @@ export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
 
 # asdf (https://asdf-vm.com/#/)
 . $(brew --prefix asdf)/asdf.sh
+
+# Bring backward-kill-line key binding from bash
+bindkey \^U backward-kill-line
