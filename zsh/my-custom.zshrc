@@ -53,6 +53,11 @@ export PATH="$HOME/.oly/bin:$PATH"
 # Java environment
 export JAVA_HOME=`/usr/libexec/java_home`
 
+# Go environment
+export GOPATH=$HOME/go
+export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+
 # This is added to fix `gem install mysql2` (ld: library not found for -lssl)
 export LIBRARY_PATH=$LIBRARY_PATH:/usr/local/opt/openssl/lib/
 
