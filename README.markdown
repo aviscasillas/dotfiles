@@ -6,11 +6,12 @@ to use oh-my-zsh as the main zsh configuration.
 
 **Install dependencies:**
 
-- Java `brew cask install java`
+- Java `brew install --cask adoptopenjdk11`
 - [Homebrew](https://brew.sh/)
 - [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 - [Emacs Plus](https://github.com/d12frosted/homebrew-emacs-plus)
 - [prelude](https://github.com/aviscasillas/prelude)
+- [asdf](https://asdf-vm.com/#/)
 
 
 **Clone this dotfiles repo,  and copy the zshr.template inside:**
